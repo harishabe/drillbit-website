@@ -1,0 +1,17 @@
+{
+  "app_title": "Titre",
+  "language": "Langue",
+  "company_name": "DrillBit",
+  "welcome_message": "Bienvenue sur le plagiat des forets",
+  "login_page": "Bienvenue sur la page de connexion de drillbit",
+  "home_menu": "domicile",
+  "product_menu": "produit",
+  "integration_menu": "l'intégration",
+  "about_menu": "sur",
+  "contact_menu": "prendre contact",
+  "buttonLabel":"Commencer",
+  "headline": "Concentrez-vous sur le concept et non sur le contenu.",
+  "description":"Nous analysons votre texte pour identifier le plagiat, résoudre d'autres problèmes d'écriture et créer facilement des citations. Vous ne voudriez pas écrire sans.",
+  "product_headline": "Produits dédiés au plagiat",
+  "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Arcu eget augue arcu gravida. Laoreet eget aliquet consequat."
+}

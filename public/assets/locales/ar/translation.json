@@ -1,0 +1,17 @@
+{
+  "app_title": "عنوان",
+  "language": "اللغة",
+  "company_name": "DrillBit",
+  "welcome_message": "مرحبا بكم في انتحال الحفر",
+  "login_page":"مرحبًا بك في صفحة تسجيل الدخول لـ Drillingbit",
+  "home_menu": "الصفحة الرئيسية",
+  "product_menu": "منتج",
+  "integration_menu": "دمج",
+  "about_menu": "حول",
+  "contact_menu": "اتصل",
+  "buttonLabel":"البدء",
+  "headline": "ركز على المفهوم وليس المحتوى ..",
+  "description":"نقوم بتحليل النص الخاص بك لتحديد الانتحال ، وحل مشكلات الكتابة الأخرى ، وبناء الاستشهادات بكل سهولة. لن ترغب في الكتابة بدونها.",
+  "product_headline": "للانتحال منتجات مخصصة",
+  "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida. Laoreet eget aliquet consequat."
+}

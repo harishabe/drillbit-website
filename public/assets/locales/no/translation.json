@@ -1,0 +1,17 @@
+{
+  "app_title": "Tittel",
+  "language": "Språk",
+  "company_name": "DrillBit",
+  "welcome_message": "Velkommen til drillbit plagiat",
+  "login_page": "Velkommen til påloggingssiden for drillbit",
+  "home_menu": "Hjem",
+  "product_menu": "Produkt",
+  "integration_menu": "Integrering",
+  "about_menu": "Om",
+  "contact_menu": "Kontakt",
+  "buttonLabel":"kom i gang",
+  "headline": "Fokuser på konseptet ikke på innholdet..",
+  "description":"Vi analyserer teksten din for å identifisere plagiering, løse andre skriveproblemer og bygge sitater med letthet. Du vil ikke skrive uten den.",
+  "product_headline": "Produkter dedikert til plagiat",
+  "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida. Laoreet eget aliquet consequat."
+}

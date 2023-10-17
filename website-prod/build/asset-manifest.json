@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce2a3400.chunk.css",
+    "main.js": "/static/js/main.c3055f60.chunk.js",
+    "main.js.map": "/static/js/main.c3055f60.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7cdeaedd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7cdeaedd.js.map",
+    "static/css/2.a67349ac.chunk.css": "/static/css/2.a67349ac.chunk.css",
+    "static/js/2.6554cc90.chunk.js": "/static/js/2.6554cc90.chunk.js",
+    "static/js/2.6554cc90.chunk.js.map": "/static/js/2.6554cc90.chunk.js.map",
+    "static/js/3.7a9fc2ee.chunk.js": "/static/js/3.7a9fc2ee.chunk.js",
+    "static/js/3.7a9fc2ee.chunk.js.map": "/static/js/3.7a9fc2ee.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a67349ac.chunk.css.map": "/static/css/2.a67349ac.chunk.css.map",
+    "static/css/main.ce2a3400.chunk.css.map": "/static/css/main.ce2a3400.chunk.css.map",
+    "static/js/2.6554cc90.chunk.js.LICENSE.txt": "/static/js/2.6554cc90.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/Montserrat-ThinItalic.293891a8.ttf",
+    "static/media/flag-icons.css": "/static/media/zw.cd37458b.svg",
+    "static/media/drillBitLogo.f818eeeb.svg": "/static/media/drillBitLogo.f818eeeb.svg",
+    "static/media/getFetch.cjs": "/static/media/getFetch.582d29c4.cjs"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cdeaedd.js",
+    "static/css/2.a67349ac.chunk.css",
+    "static/js/2.6554cc90.chunk.js",
+    "static/css/main.ce2a3400.chunk.css",
+    "static/js/main.c3055f60.chunk.js"
+  ]
+}
