@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	text-align: center; 
     margin: 5.5rem;
+    @media screen and (max-width: 769px) {
+		margin: 1rem;
+	}
 `;
 
 export const Heading = styled.div`
@@ -19,4 +22,8 @@ export const UnicodeButton = styled.div`
 
 export const UnicodeButton2 = styled.div`
     margin-left: 12px;
+`;
+
+export const ErrorBlock = styled.div`
+    color: #ff0000;
 `;

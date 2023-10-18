@@ -6,6 +6,7 @@ import {
     Heading,
     UnicodeButton,
     UnicodeButton2,
+    ErrorBlock
 } from './UnicodeStyle';
 import MultipleStopIcon from '@mui/icons-material/MultipleStop';
 import Footer from '../../component/Footer/Footer';
@@ -13,6 +14,7 @@ import Footer from '../../component/Footer/Footer';
 const UnicodeConverter = () => {
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
+    const [error, setError] = useState(false);
 
     const fetchData = async (url, method, data, setOutput) => {
         try {
@@ -25,9 +27,11 @@ const UnicodeConverter = () => {
             });
             const result = await response.json();
             setOutput(result);
+            setError(false);
         } catch (error) {
             console.log('Error:', error);
-            alert('Something went error');
+            setError(true);
+            setOutput('');
         }
     };
 
@@ -38,6 +42,7 @@ const UnicodeConverter = () => {
     const handleClear = () => {
         setInput('');
         setOutput('');
+        setError(false);
     };
 
     const handleSubmit = async (e, data) => {
@@ -60,7 +65,7 @@ const UnicodeConverter = () => {
                                     multiline={ true }
                                     rows={ 9 }
                                     required={ true }
-                                    placeholder="Type or Paste Text here..."
+                                    placeholder="Type or paste text here..."
                                     onInput={ handleChange }
                                     value={ input }
                                 />
@@ -73,7 +78,7 @@ const UnicodeConverter = () => {
                                     fullWidth
                                     multiline={ true }
                                     rows={ 9 }
-                                    placeholder='Output Text'
+                                    placeholder='Output text'
                                     value={ output }
                                 />
                             </Grid>
@@ -84,13 +89,14 @@ const UnicodeConverter = () => {
                             Convert to Unicode
                         </Button> 
                         <UnicodeButton2/>
-                        { output  && 
+                        { (output || error) && 
                             <Button onClick={handleClear}>
                                 Clear all
                             </Button> 
                         }
                     </UnicodeButton>
                 </Box>
+                { error  && <ErrorBlock> Something went wrong , Please try again </ErrorBlock>}
             </Container>
             <Footer />
         </>
