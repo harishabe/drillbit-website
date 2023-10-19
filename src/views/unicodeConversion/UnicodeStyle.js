@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { Grid, Autocomplete } from '@mui/material';
 
 export const Container = styled.div`
 	text-align: center; 
-    margin: 5.5rem;
+    margin: 4rem;
     @media screen and (max-width: 769px) {
 		margin: 1rem;
 	}
@@ -27,3 +28,17 @@ export const UnicodeButton2 = styled.div`
 export const ErrorBlock = styled.div`
     color: #ff0000;
 `;
+
+export const StyledAutocomplete = styled(Autocomplete)({
+    width: 300, 
+    marginBottom: 20,
+});
+
+export const GridItem = styled(Grid)({
+    display: 'flex',
+});
+
+export const CenteredGrid = styled(GridItem)({
+    justifyContent: 'center',
+    alignItems: 'center',
+});

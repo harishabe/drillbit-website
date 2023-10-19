@@ -6,15 +6,25 @@ import {
     Heading,
     UnicodeButton,
     UnicodeButton2,
-    ErrorBlock
+    ErrorBlock,
+    StyledAutocomplete,
+    GridItem,
+    CenteredGrid
 } from './UnicodeStyle';
 import MultipleStopIcon from '@mui/icons-material/MultipleStop';
 import Footer from '../../component/Footer/Footer';
+
+const UnicodeLanguage = [
+    { label: 'Kannada', id: 'kannada' },
+    { label: 'Hindi', id: 'hindi' },
+    { label: 'Bengali', id: 'bengali' },
+];
 
 const UnicodeConverter = () => {
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
     const [error, setError] = useState(false);
+    const [lang, setLang] = useState(UnicodeLanguage[0]);
 
     const fetchData = async (url, method, data, setOutput) => {
         try {
@@ -53,12 +63,20 @@ const UnicodeConverter = () => {
     return (
         <>
             <Container>
+                <StyledAutocomplete
+                    disablePortal
+                    options={ UnicodeLanguage }
+                    disableClearable
+                    defaultValue={ UnicodeLanguage[0] }
+                    onChange={ (e, data) => setLang(data) }
+                    renderInput={ (params) => <TextField { ...params } label="Select Language"/> }
+                />
                 <Box component="form" onSubmit={ (e) => handleSubmit(e, e.target[0].value) }>
                     <Heading>
-                        Unicode converter
+                        { lang.label } Unicode converter
                     </Heading>
                     <Grid container spacing={ 2 } >
-                        <Grid item xs={ 12 } display={'flex'}>
+                        <GridItem item xs={ 12 }>
                             <Grid item xs={ 5.7 }>
                                 <TextField
                                     fullWidth
@@ -70,9 +88,9 @@ const UnicodeConverter = () => {
                                     value={ input }
                                 />
                             </Grid>
-                            <Grid item xs={ 0.5 } sx={ { display: 'flex', justifyContent: 'center', alignItems: 'center' } }>
+                            <CenteredGrid item xs={ 0.5 }>
                                 <MultipleStopIcon />
-                            </Grid>
+                            </CenteredGrid>
                             <Grid item xs={ 5.7 }>
                                 <TextField
                                     fullWidth
@@ -82,7 +100,7 @@ const UnicodeConverter = () => {
                                     value={ output }
                                 />
                             </Grid>
-                        </Grid>
+                        </GridItem>
                     </Grid>
                     <UnicodeButton>
                         <Button type="submit" variant="contained" >
