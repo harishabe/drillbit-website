@@ -26,6 +26,7 @@ export const UnicodeButton2 = styled.div`
 `;
 
 export const ErrorBlock = styled.div`
+    margin-top: 5px;
     color: #ff0000;
 `;
 

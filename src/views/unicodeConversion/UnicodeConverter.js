@@ -24,7 +24,7 @@ const UnicodeConverter = () => {
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
     const [error, setError] = useState(false);
-    const [lang, setLang] = useState(UnicodeLanguage[0]);
+    const [lang, setLang] = useState();
 
     const fetchData = async (url, method, data, setOutput) => {
         try {
@@ -67,13 +67,12 @@ const UnicodeConverter = () => {
                     disablePortal
                     options={ UnicodeLanguage }
                     disableClearable
-                    defaultValue={ UnicodeLanguage[0] }
                     onChange={ (e, data) => setLang(data) }
                     renderInput={ (params) => <TextField { ...params } label="Select Language"/> }
                 />
                 <Box component="form" onSubmit={ (e) => handleSubmit(e, e.target[0].value) }>
                     <Heading>
-                        { lang.label } Unicode converter
+                        { lang?.label } Unicode converter
                     </Heading>
                     <Grid container spacing={ 2 } >
                         <GridItem item xs={ 12 }>
@@ -102,6 +101,7 @@ const UnicodeConverter = () => {
                             </Grid>
                         </GridItem>
                     </Grid>
+                    { error  && <ErrorBlock> Something went wrong , Please try again </ErrorBlock>}
                     <UnicodeButton>
                         <Button type="submit" variant="contained" >
                             Convert to Unicode
@@ -114,7 +114,6 @@ const UnicodeConverter = () => {
                         }
                     </UnicodeButton>
                 </Box>
-                { error  && <ErrorBlock> Something went wrong , Please try again </ErrorBlock>}
             </Container>
             <Footer />
         </>
