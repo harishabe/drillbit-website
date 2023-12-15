@@ -1502,3 +1502,31 @@ export const AICTEData = {
         }
     ]
 };
+
+export const UnicodeData = {
+    title: 'Unicode converter',
+    language: 'Select Language',
+    fonts: 'Select Font',
+    inputText: 'Type or paste text here... Maximum 120 words',
+    outputText: 'Output text',
+    loading: 'Loading...',
+    errorMessage: 'Something went wrong , Please try again',
+    convertToUnicode: 'Convert to Unicode',
+    clearAll: 'Clear all',
+    download: 'Download',
+    unicodeLanguage :[
+        { label: 'Assamese' },
+        { label: 'Bengali' },
+        { label: 'Gujarathi' },
+        { label: 'Hindi' },
+        { label: 'Kannada' },
+        { label: 'Malayalam' },
+        { label: 'Marathi' },
+        { label: 'Oriya' },
+        { label: 'Punjabi' },
+        { label: 'Sanskrit' },
+        { label: 'Tamil' },
+        { label: 'Telugu' },
+        { label: 'Urdu' },
+    ]
+};
