@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, Autocomplete } from '@mui/material';
+import { Grid, Autocomplete, Skeleton } from '@mui/material';
 
 export const Container = styled.div`
 	text-align: center; 
@@ -16,23 +16,36 @@ export const Heading = styled.div`
     line-height: 24px;
 `;
 
+export const LoaderButton = styled.div`
+	margin-top: 80px;
+`;
+
 export const UnicodeButton = styled.div`
 	margin: 20px;
     display: inline-flex;
 `;
 
 export const UnicodeButton2 = styled.div`
-    margin-left: 12px;
+margin-left: 12px;
+`;
+
+export const UnicodeButton3 = styled.div`
+margin-right: 12px;
 `;
 
 export const ErrorBlock = styled.div`
-    margin-top: 5px;
-    color: #ff0000;
+margin-top: 5px;
+color: #ff0000;
+`;
+
+export const UnicodeSkeleton = styled(Skeleton)`
+    margin-top: -21px !important;
 `;
 
 export const StyledAutocomplete = styled(Autocomplete)({
-    width: 300, 
+    width: 320, 
     marginBottom: 20,
+    marginRight:10
 });
 
 export const GridItem = styled(Grid)({
@@ -42,4 +55,5 @@ export const GridItem = styled(Grid)({
 export const CenteredGrid = styled(GridItem)({
     justifyContent: 'center',
     alignItems: 'center',
+    margin: '9px'
 });
